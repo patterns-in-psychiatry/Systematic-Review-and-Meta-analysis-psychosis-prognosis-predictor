@@ -1,5 +1,4 @@
 library(readxl)
-library(grid)
 library(meta)
 data_neg <- read_excel("H:\\PhD\\Systematic Review\\Remissie\\negatieve symptomen\\r_neg2.xlsx")
 neg_byvar_FEP <- metacont(as.numeric(data_neg$r_n), as.numeric(data_neg$r_mean), as.numeric(data_neg$r_SD), as.numeric(data_neg$nr_n), as.numeric(data_neg$nr_mean), as.numeric(data_neg$nr_SD), sm = 'SMD', byvar = data_neg$FEP, studlab = data_neg$study)
