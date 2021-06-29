@@ -1,5 +1,4 @@
 library(readxl)
-library(grid)
 library(meta)
 data_pos <- read_excel("H:\\PhD\\Systematic Review\\Remissie\\positieve symptomen\\r_pos2.xlsx")
 pos_byvar_FEP <-metacont(as.numeric(data_pos$r_n), as.numeric(data_pos$r_mean), as.numeric(data_pos$r_SD), as.numeric(data_pos$nr_n), as.numeric(data_pos$nr_mean), as.numeric(data_pos$nr_SD), sm = 'SMD', byvar = data_pos$FEP, studlab = data_pos$study)
