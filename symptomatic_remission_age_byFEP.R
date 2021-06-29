@@ -1,5 +1,4 @@
 library(readxl)
-library(grid)
 library(meta)
 data_age <- read_excel("H:\\PhD\\Systematic Review\\Remissie\\leeftijd\\r_age.xlsx")
 age_byvar_FEP <- metacont(as.numeric(data_age$rem_n), as.numeric(data_age$rem_mean), as.numeric(data_age$rem_SD), as.numeric(data_age$nrem_n), as.numeric(data_age$nrem_mean), as.numeric(data_age$nrem_SD), sm = "SMD", byvar = data_age$FEP, studlab = data_age$study)
