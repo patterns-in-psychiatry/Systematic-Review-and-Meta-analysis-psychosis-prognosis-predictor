@@ -1,5 +1,4 @@
 library(readxl)
-library(grid)
 library(meta)
 data_sex <- read_excel("H:\\PhD\\Systematic Review\\Remissie\\geslacht\\rsex2.xlsx")
 sex_byvar_FEP <- metabin(as.numeric(data_sex$rem_n_male), as.numeric(data_sex$rem_n), as.numeric(data_sex$nrem_n_male), as.numeric(data_sex$nrem_n), sm = 'OR', byvar = data_sex$FEP, studlab = data_sex$study)
