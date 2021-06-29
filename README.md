@@ -1,4 +1,4 @@
-These scripts are used in a meta-analysis [1] of the association between symptomatic remission (according to RSWG criteria) and the variables sex, age, positive and negative symptoms. The output of the scripts includes a forest plot to summarize information of the included studies.Each script uses an Excel file as input with the following format:
+These scripts are used in a meta-analysis [1] of the association between symptomatic remission (according to RSWG criteria) and the variables sex, age, positive and negative symptoms. The output of the scripts includes a forest plot to summarize information of the included studies. Each script uses an Excel file as input with the following format:
 
 •	Rows: each row contains the information of 1 study
 •	Columns present in all input files: study, FU (duration of follow-up), FEP (first episode psychosis yes/no)
